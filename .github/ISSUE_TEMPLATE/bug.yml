@@ -1,0 +1,24 @@
+name: Fehler melden
+description: Etwas funktioniert nicht wie erwartet.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: was
+    attributes:
+      label: Was ist passiert?
+      description: Kurze Beschreibung und was du stattdessen erwartet hast.
+    validations:
+      required: true
+  - type: textarea
+    id: schritte
+    attributes:
+      label: Schritte zum Nachstellen
+      placeholder: "1. Öffne …\n2. Klicke …\n3. …"
+  - type: input
+    id: umgebung
+    attributes:
+      label: Umgebung
+      placeholder: "z. B. Chrome 130 / Windows 11, iPhone Safari, Server-Version"
+  - type: markdown
+    attributes:
+      value: "**Keine Passwörter, Kundendaten oder Tokens in Issues einfügen.** Sicherheitslücken bitte per E-Mail melden (siehe SECURITY.md)."
